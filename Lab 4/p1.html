@@ -1,0 +1,80 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+        label {
+            display: inline-block;
+            width: 105px;
+            margin-right: 5px;
+        }
+    </style>
+    </style>
+    </head>
+    <body>
+        <center><h1>Student Registration Form</h1></center>
+        <form style="width: 400px; margin: 0 auto;">
+
+            <label for="name">FullName:</label> 
+            <input type="text" id="name" name="name"><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"><br><br>
+
+            <label for="MobileNo">MobileNo:</label>
+            <input type="tel" id="MobileNo" name="MobileNo"><br><br>
+
+            <label for="address">Address:</label>
+            <textarea id="address" name="address"></textarea><br><br>
+
+            <label for="nationality">Nationality:</label>
+            <input type="text" id="nationality" name="nationality"><br><br>
+
+            <label for="dateofbirth">Date of Birth:</label>
+            <input type="date" id="dateofbirth" name="dateofbirth"><br><br>
+
+            <label for="gender">Gender:</label>
+
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label><br><br>
+
+            <label for="highestdegree">Highest Degree:</label>
+
+            <select id="highestdegree" name="highestdegree">
+                <option value="" disabled selected>Select Degree</option>
+                <option value="high_school">High School</option>
+                <option value="bachelors">Bachelor's Degree</option>
+                <option value="masters">Master's Degree</option>
+                <option value="phd">PhD</option>
+            </select><br><br>
+
+
+            <label for="CPI">CPI:</label>
+            <input type="number" id="CPI" name="CPI" step="0.01" min="0" max="10"><br><br>
+
+            <label for="University">University:</label>
+            <input type="text" id="University" name="University"><br><br>
+
+            <label for="passingyear">Passing Year:</label>
+            <select id="passingyear" name="passingyear">
+                <option value="">Select Year</option>
+                <option value="2020">2020</option>
+                <option value="2021">2021</option>
+                <option value="2022">2022</option>
+                <option value="2023">2023</option>
+            </select><br><br>
+
+        
+            <input type="submit" value="Submit">
+            
+            <input type="reset" value="Cancel">
+
+        </form>
+
+    </body>
+    </html>
