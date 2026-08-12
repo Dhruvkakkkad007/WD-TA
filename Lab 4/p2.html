@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Employee Registration</title>
+</head>
+
+<body>
+
+    <h1 style="text-align: center;">Employee Registration</h1>
+
+    <form>
+
+        <table align="center" cellpadding="8">
+
+            
+            <tr>
+                <th colspan="6">Personal Information</th>
+            </tr>
+
+           
+            <tr>
+                <td><label for="employeeId">Employee Id</label></td>
+                <td>:</td>
+                <td>
+                    <input type="text" id="employeeId" placeholder="Enter Employee Id">
+                </td>
+
+                <td><label for="employeeName">Employee Name</label></td>
+                <td>:</td> 
+                <td>
+                    <input type="text" id="employeeName" placeholder="Enter Employee Name">
+                </td>
+            </tr>
+
+            <!-- Email and Contact -->
+            <tr>
+                <td><label for="email">Email</label></td>
+                <td>:</td>
+                <td>
+                    <input type="email" id="email" placeholder="Enter Email">
+                </td>
+
+                <td><label for="contactNo">Contact No</label></td>
+                <td>:</td>
+                <td>
+                    <input type="tel" id="contactNo" placeholder="Enter Contact No">
+                </td>
+            </tr>
+
+            <!-- Marital Status -->
+            <tr>
+                <td><label for="marital">Marital Status</label></td>
+                <td>:</td>
+                <td colspan="2">
+                    <input type="radio" id="single" name="marital">
+                    <label for="single">Single</label>
+                    <input type="radio" id="married" name="marital">
+                    <label for="married">Married</label>    
+                </td>
+            </tr>
+
+
+            <!-- Education Qualification Heading -->
+            <tr>
+                <th colspan="6">Education Qualification</th>
+            </tr>
+
+            <!-- Education and Experience -->
+            <tr>
+                <td><label for="education">Education</label></td>
+                <td>:</td>
+                <td>
+                    <input type="text" id="education"    placeholder="Enter Education details">
+                </td>
+
+                <td><label for="experience">Experience</label></td>
+                <td>:</td>
+                <td>
+                    <input type="text" id="experience" placeholder="Enter Experience Details">
+                </td>
+            </tr>
+
+
+            <!-- Job Details Heading -->
+            <tr>
+                <th colspan="6">Job Details</th>
+            </tr>
+
+            <!-- Designation and Location -->
+            <tr>
+                <td><label for="designation">Designation</label></td>
+                <td>:</td>
+                <td>
+                    <input type="text" id="designation"  placeholder="Enter Designation details">
+                </td>
+
+                <td><label for="jobLocation">Job Location</label></td>
+                <td>:</td>
+                <td>
+                    <input type="text" id="jobLocation"  placeholder="Enter Job Location">
+                </td>
+            </tr>
+
+            <!-- Salary -->
+            <tr>
+                <td><label for="salary">Salary</label></td>
+                <td>:</td>
+                <td>
+                    <input type="text" id="salary" placeholder="Enter Salary details">
+                </td>
+            </tr>
+
+            <!-- Register Button -->
+            <tr>
+                <td colspan="6" style="text-align: center;">
+                    <hr>
+                    <input type="submit" value="Register">
+                </td>
+            </tr>
+
+        </table>
+
+    </form>
+
+</body>
+</html>

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Create Account Form</title>
+</head>
+
+<body>
+
+
+
+    <form>
+
+        <table border="10" cellpadding="8" align="center">
+            <tr>
+                <th colspan="2" style="font-size: 30px;">Create Account</th>
+            </tr>
+            <!-- First Name and Last Name -->
+            <tr>
+                <td>
+                    <label for="fname">First name *</label><br>
+                    <input type="text"
+                           id="fname"
+                           name="fname"
+                           placeholder="enter your first name">
+                </td>
+
+                <td>
+                    <label for="lname">Last name</label><br>
+                    <input type="text"
+                           id="lname"
+                           name="lname"
+                           placeholder="enter your last name">
+                </td>
+            </tr>
+
+            <!-- Email -->
+            <tr>
+                <td colspan="2">
+                    <label for="email">Email *</label><br>
+                    <input type="email"
+                           id="email"
+                           name="email"
+                           placeholder="enter your email"
+                           size="85">
+                </td>
+            </tr>
+
+            <!-- Password and Confirm Password -->
+            <tr>
+                <td>
+                    <label for="password">Password *</label><br>
+                    <input type="password"
+                           id="password"
+                           name="password"
+                           placeholder="enter your password">
+                </td>
+
+                <td>
+                    <label for="confirmPassword">Confirm Password *</label><br>
+                    <input type="password"
+                           id="confirmPassword"
+                           name="confirmPassword"
+                           placeholder="enter your password again">
+                </td>
+            </tr>
+
+            <!-- Gender and Hobbies -->
+            <tr>
+                <td>
+                    <label>Gender:</label><br>
+
+                    <input type="radio"
+                           id="male"
+                           name="gender"
+                           value="male">
+                    <label for="male">Male</label>
+
+                    <input type="radio"
+                           id="female"
+                           name="gender"
+                           value="female">
+                    <label for="female">Female</label>
+                </td>
+
+                <td>
+                    <label>Hobbies:</label><br>
+
+                    <input type="checkbox"
+                           id="music"
+                           name="hobbies"
+                           value="music">
+                    <label for="music">Music</label>
+
+                    <input type="checkbox"
+                           id="sports"
+                           name="hobbies"
+                           value="sports">
+                    <label for="sports">Sports</label>
+
+                    <input type="checkbox"
+                           id="travel"
+                           name="hobbies"
+                           value="travel">
+                    <label for="travel">Travel</label>
+
+                    <input type="checkbox"
+                           id="movies"
+                           name="hobbies"
+                           value="movies">
+                    <label for="movies">Movies</label>
+                </td>
+            </tr>
+
+            <!-- Source of Income and Income -->
+            <tr>
+                <td>
+                    <label for="source">Source of Income:</label><br>
+
+                    <select id="source" name="source">
+                        <option value="employed">Employed</option>
+                        <option value="business">Business</option>
+                        <option value="student">Student</option>
+                        <option value="other">Other</option>
+                    </select>
+                </td>
+
+                <td>
+                    <label for="income">Income:</label><br>
+
+                    <input type="range"
+                           id="income"
+                           name="income"
+                           min="0"
+                           max="100">
+
+                    <span>20K</span>
+                </td>
+            </tr>
+
+            <!-- Profile Picture and Age -->
+            <tr>
+                <td>
+                    <label for="profile">Upload Profile Picture:</label><br>
+
+                    <input type="file"
+                           id="profile"
+                           name="profile">
+                </td>
+
+                <td>
+                    <label for="age">Age:</label><br>
+
+                    <input type="number"
+                           id="age"
+                           name="age"
+                           value="18">
+                </td>
+            </tr>
+
+            <!-- Bio -->
+            <tr>
+                <td colspan="2">
+                    <label for="bio">Bio:</label><br>
+
+                    <textarea id="bio"
+                              name="bio"
+                              rows="5"
+                              cols="80"></textarea>
+                </td>
+            </tr>
+
+            <!-- Submit Button -->
+            <tr>
+                <td colspan="2" align="right">
+                    <button type="submit">Create</button>
+                </td>
+            </tr>
+
+        </table>
+
+    </form>
+
+</body>
+</html>
