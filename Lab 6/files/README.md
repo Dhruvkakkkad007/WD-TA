@@ -685,19 +685,3 @@ Remember:
 - `name` = What information?
 - `content` = What is the information?
 
----
-
-## 📁 Project Files
-
-| File | Purpose |
-|---|---|
-| `index.html` | Working demo page (College Website example) with all meta tags |
-| `README.md` | This teaching reference document |
-
-## ▶️ How to Use in Lab
-
-1. Open `index.html` in any browser.
-2. Right-click → **View Page Source** (or `Ctrl+U`) to show students the `<head>` section.
-3. Open DevTools (`F12`) → Toggle Device Toolbar to demonstrate the `viewport` tag on mobile screen sizes.
-
-*Prepared for Web Designing Lab — feel free to edit and reuse for classroom teaching.*
