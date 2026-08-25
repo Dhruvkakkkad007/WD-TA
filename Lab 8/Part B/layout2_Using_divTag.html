@@ -5,99 +5,94 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-      .container {
+
+      .container{
         width: 90%;
         margin: auto;
-        border: 1px solid gray;
+        padding: 10px;
       }
 
-      .top {
+      .top
+      {
         height: 100px;
         display: flex;
-        align-items: center;
+        justify-content: space-between;
         border-bottom: 2px solid black;
+        margin: 5px;
       }
 
-      .logo {
-        width: 30%;
-      }
-      .logo img {
-        height: 60px;
-        width: 80px;
-        padding-left: 20px;
+      .logo{
+       
+        margin-left: 20px;
       }
 
-      .navbar {
-        width: 70%;
-        text-align: center;
+      .logo img{
+        height: 100px;
+        width: 90px;
       }
 
-      .navbar a {
+      .navbar a{
+        width: 75%;
         text-decoration: none;
-        text-align: center;
         margin: 10px;
         font-size: 20px;
       }
 
-      .content {
+      .main{
         display: flex;
         min-height: 400px;
-        align-items: stretch;
+          align-items: stretch;
       }
-
-      .menu {
-        background-color: red;
-        color: black;
-        border: 1px solid yellow;
-        font-size: 20px;
-        padding: 30px;
-        text-align: center;
-        
-      }
-
-      .left-sidebar {
+      .left-sidebar{
         width: 20%;
-        display: flex;
-        flex-direction: column;
-        background-color: red;
-        gap: 6px;
-      }
-
-      .right-content {
-        width: 80%;
-
-        padding: 10px;
-        
-        
-        border: 2px solid black;
-      }
-
-      .card {
-        width: 100px;
-        
-      }
-
-      .card img {
-        height: 115px;
-        width: 120px;
-      }
-
-      .card p {
-        margin: 2px 0;
-      }
-
-      .footer {
-        background-color: blue;
+       
         text-align: center;
-        color: white;
-        padding: 10px;
-        font-size: 20px;
+        background-color: red;
+
+       
+
+       
+      }
+
+      .sidebar{
+        border: 1px solid yellow;
+        font-size: larger;
+      }
+
+      .right-content{
+        width: 80%;
+        border: 1px solid black;
       }
 
       .firstrow,.secondrow{
         display: flex;
         gap: 70px;
-          margin-bottom: 20px;
+        margin-bottom: 10px;
+        padding: 5px;
+      }
+
+      .menu{
+         background-color: red;
+        color: black;
+        border: 1px solid yellow;
+        font-size: 20px;
+        padding: 30px;
+        text-align: center;
+        margin-bottom: 5px;
+        
+      }
+
+      .card img{
+        height: 100px;
+        width: 90px;
+      }
+
+      .footer{
+        background-color: blue;
+        color: white;
+        padding: 10px;
+        text-align: center;
+        font-size: 25px;
       }
     </style>
   </head>
@@ -105,23 +100,21 @@
     <div class="container">
       <div class="top">
         <div class="logo">
-          <img
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGylQPE46aHi7jJKUq8v7iYapnLlgPM2g-uQeXQDHLYQ&s=10"
-            alt="logo"
-          />
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGylQPE46aHi7jJKUq8v7iYapnLlgPM2g-uQeXQDHLYQ&s=10"
+            alt="logo">
         </div>
 
         <div class="navbar">
           <a href="#">Home</a>
-          <a href="#">About</a>
+          <a href="#">About Us</a>
           <a href="#">Contact</a>
           <a href="#">Login</a>
         </div>
       </div>
 
-      <div class="content">
+      <div class="main">
         <div class="left-sidebar">
-          <div class="menu">Sidebar</div>
+          <div class="sidebar">Sidebar</div>
           <div class="menu">Home</div>
           <div class="menu">Placement</div>
           <div class="menu">Recruitement</div>
@@ -130,14 +123,15 @@
         </div>
 
         <div class="right-content">
+
           <div class="firstrow">
             <div class="card">
               <img
                 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-2MPrOpVIcRvCDcZb6__027K715-REYSF-fNZW3vhBQ&s=10"
                 alt="logo"
               />
-              <p>Firoz</p>
-              <p>BE,Mtech(CSE)</p>
+              <p>Dhruv Kakkad</p>
+              <p>5.00Lacs</p>
             </div>
 
             <div class="card">
@@ -145,19 +139,22 @@
                 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-2MPrOpVIcRvCDcZb6__027K715-REYSF-fNZW3vhBQ&s=10"
                 alt="logo"
               />
-              <p>Firoz</p>
-              <p>BE,Mtech(CSE)</p>
+              <p>Dhruv Kakkad</p>
+              <p>5.00Lacs</p>
             </div>
+
+
           </div>
 
           <div class="secondrow">
+
             <div class="card">
-              <img
+             <img
                 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-2MPrOpVIcRvCDcZb6__027K715-REYSF-fNZW3vhBQ&s=10"
                 alt="logo"
               />
-              <p>Firoz</p>
-              <p>BE,Mtech(CSE)</p>
+              <p>Dhruv Kakkad</p>
+              <p>5.00Lacs</p>
             </div>
 
             <div class="card">
@@ -165,41 +162,46 @@
                 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-2MPrOpVIcRvCDcZb6__027K715-REYSF-fNZW3vhBQ&s=10"
                 alt="logo"
               />
-              <p>Firoz</p>
-              <p>BE,Mtech(CSE)</p>
+              <p>Dhruv Kakkad</p>
+              <p>5.00Lacs</p>
             </div>
+
 
             <div class="card">
               <img
                 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-2MPrOpVIcRvCDcZb6__027K715-REYSF-fNZW3vhBQ&s=10"
                 alt="logo"
               />
-              <p>Firoz</p>
-              <p>BE,Mtech(CSE)</p>
+              <p>Dhruv Kakkad</p>
+              <p>5.00Lacs</p>
             </div>
+
+
+            <div class="card">
+             <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-2MPrOpVIcRvCDcZb6__027K715-REYSF-fNZW3vhBQ&s=10"
+                alt="logo"
+              />
+              <p>Dhruv Kakkad</p>
+              <p>5.00Lacs</p>
+            </div>
+
 
             <div class="card">
               <img
                 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-2MPrOpVIcRvCDcZb6__027K715-REYSF-fNZW3vhBQ&s=10"
                 alt="logo"
               />
-              <p>Firoz</p>
-              <p>BE,Mtech(CSE)</p>
+              <p>Dhruv Kakkad</p>
+              <p>5.00Lacs</p>
             </div>
 
-            <div class="card">
-              <img
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-2MPrOpVIcRvCDcZb6__027K715-REYSF-fNZW3vhBQ&s=10"
-                alt="logo"
-              />
-              <p>Firoz</p>
-              <p>BE,Mtech(CSE)</p>
-            </div>
           </div>
+
         </div>
       </div>
 
-      <div class="footer">Darshan Uni Rajkot</div>
+      <div class="footer">&copy; Darhan University Rajkot</div>
     </div>
   </body>
 </html>
