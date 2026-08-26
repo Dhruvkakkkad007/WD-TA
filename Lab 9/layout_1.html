@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      header {
+        display: flex;
+        justify-content: space-between;
+        height: 140px;
+        align-items: center;
+      }
+
+      nav a {
+        margin: 10px;
+        text-decoration: none;
+      }
+
+      nav {
+        margin-top: 10px;
+      }
+      img {
+        height: 150px;
+        width: 300px;
+      }
+
+      .hero {
+        height: 260px;
+        display: flex;
+        position: relative;
+        align-items: center;
+        background-color: white;
+      }
+
+      .hero-img {
+        width: 50%;
+      }
+
+      .hero-img img {
+        width: 100%;
+        height: 260px;
+        margin-left: 350px;
+      }
+
+      .content {
+        width: 50%;
+        padding: 20px;
+        margin-left: 600px;
+        position: absolute;
+      }
+
+      .content h1 {
+        margin-bottom: 10px;
+      }
+
+      .programs {
+        display: flex;
+
+        justify-content: space-around;
+
+        padding: 20px 0;
+
+        gap: 30px;
+      }
+      .card {
+        height: 120px;
+        width: 200px;
+        border: 3px solid orange;
+        margin-bottom: 5px;
+        text-align: center;
+        padding-top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <img
+          src="https://th.bing.com/th/id/OIP.Ci9TmJcWOFLfrq37OTZCHQHaCa?r=0&o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3"
+          alt=""
+        />
+
+        <nav>
+          <a href="Home">Home</a>
+          <a href="About">About</a>
+          <a href="service">Service</a>
+          <a href="work">MyWork</a>
+          <a href="Contact">Contact</a>
+        </nav>
+      </header>
+
+      <main>
+        <section class="hero">
+          <div class="hero-img">
+            <img
+              src="./image_2.png"
+              alt=""
+            />
+          </div>
+
+          <div class="content">
+            <h1>Hello , I am Web Developer</h1>
+
+            <p>
+              I use HTML and CSS to convert webpage designs into beautiful and
+              efficient websites.
+            </p>
+          </div>
+        </section>
+
+        <section class="programs">
+          <div class="card">Program1</div>
+          <div class="card">Program1</div>
+          <div class="card">Program1</div>
+          <div class="card">Program1</div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

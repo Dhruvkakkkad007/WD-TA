@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Relative Position Demo</title>
+
+  <style>
+    .box {
+      width: 200px;
+      height: 70px;
+      margin: 10px;
+      border: 2px solid black;
+      text-align: center;
+      padding-top: 20px;
+      box-sizing: border-box;
+    }
+
+    .box1 {
+      background-color: lightblue;
+    }
+
+    .box2 {
+      background-color: lightgreen;
+
+      position: relative;
+
+      top: 30px;
+      left: 50px;
+    }
+
+    .box3 {
+      background-color: lightcoral;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="box box1">Box 1</div>
+
+  <div class="box box2">Box 2 - Relative</div>
+
+  <div class="box box3">Box 3</div>
+
+</body>
+</html>

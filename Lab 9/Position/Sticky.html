@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sticky Position Demo</title>
+
+  <style>
+    body {
+      margin: 0;
+    }
+
+    .header {
+      background-color: lightblue;
+      padding: 20px;
+      height: 150px;
+    }
+
+    .sticky-box {
+      background-color: lightgreen;
+      border: 2px solid black;
+      padding: 20px;
+
+      position: sticky;
+      top: 0;
+    }
+
+    .content {
+      height: 1500px;
+      padding: 20px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="header">
+    <h1>Website Header</h1>
+    <p>Scroll down to see the sticky effect ↓</p>
+  </div>
+
+  <div class="sticky-box">
+    I am Sticky Navigation!
+  </div>
+
+  <div class="content">
+    <h2>Website Content</h2>
+    <p>Keep scrolling...</p>
+  </div>
+
+</body>
+</html>

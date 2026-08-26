@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CSS Static Position Demo</title>
+
+  <style>
+    .box {
+      width: 200px;
+      height: 80px;
+      margin: 10px;
+      border: 2px solid black;
+      text-align: center;
+      padding-top: 30px;
+      box-sizing: border-box;
+    }
+
+    .box1 {
+      background-color: lightblue;
+    }
+
+    .box2 {
+      background-color: lightgreen;
+
+      position: static;
+
+      /* These will NOT work */
+      top: 50px;
+      left: 100px;
+      
+    }
+
+    .box3 {
+      background-color: lightcoral;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="box box1">Box 1</div>
+
+  <div class="box box2">
+    Box 2 - Static
+  </div>
+
+  <div class="box box3">Box 3</div>
+
+</body>
+</html>
