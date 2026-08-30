@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reverse Animation</title>
+
+    <style>
+        .box {
+            width: 150px;
+            height: 150px;
+            background-color: red;
+
+            animation-name: moveBox;
+            animation-duration: 4s;
+
+            /* Run animation backwards */
+            animation-direction: reverse;
+
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes moveBox {
+
+            0% {
+                margin-left: 0px;
+                background-color: red;
+            }
+
+            100% {
+                margin-left: 500px;
+                background-color: yellow;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="box"></div>
+
+</body>
+</html>
+

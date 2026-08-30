@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        
+      }
+      header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 240px;
+      }
+
+      nav a {
+        margin: 10px;
+        text-decoration: none;
+        font-size: 20px;
+      }
+
+      img {
+        height: 120px;
+        width: 350px;
+      }
+
+      .hero {
+        height: 400px;
+        position: relative;
+      }
+
+      .hero-img img {
+        width: 100%;
+        height: 350px;
+      }
+
+      hero-img {
+        width: 50%;
+      }
+
+      .content{
+        width: 50%;
+        position: absolute;
+        top: 15%;
+        left: 42%;
+      }
+
+      .program{
+        display: flex;
+        justify-content: space-around;
+      }
+
+      .card{
+        height: 105px;
+        width: 200px;
+        border: 3px solid orange;
+        text-align: center;
+        padding: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <img
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8DaViunonBMd78CBxKAVD3aXeSCxdtr-yIsPkIQnrYVXXapGrypQqITMh&s=10"
+        alt=""
+      />
+
+      <nav>
+        <a href="Home">Home</a>
+        <a href="About">About</a>
+        <a href="service">Service</a>
+        <a href="work">MyWork</a>
+        <a href="Contact">Contact</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="hero-img">
+        <img src="image_2.png" alt="image" />
+      </div>
+
+      <div class="content">
+        <h1>Hello ,I am Web Developer</h1>
+        <p>
+          I use HTML and CSS to convert webpage designs into beautiful and
+          efficient websites.
+        </p>
+      </div>
+    </section>
+
+    <section class="program">
+      <div class="card">Program1</div>
+      <div class="card">Program2</div>
+      <div class="card">Program3</div>
+      <div class="card">Program4</div>
+    </section>
+  </body>
+</html>

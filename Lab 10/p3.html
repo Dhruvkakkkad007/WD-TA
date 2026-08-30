@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation Delay</title>
+
+    <style>
+        .box {
+            width: 150px;
+            height: 150px;
+            background-color: red;
+
+            animation-name: changeColor;
+            animation-duration: 3s;
+
+            /* Wait for 2 seconds */
+            animation-delay: 2s;
+        }
+
+        @keyframes changeColor {
+            from {
+                background-color: red;
+            }
+
+            to {
+                background-color: yellow;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Animation starts after 2 seconds</h2>
+
+    <div class="box"></div>
+
+</body>
+</html>

@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moving Div</title>
+
+    <style>
+        .container {
+            width: 700px;
+            height: 500px;
+            border: 2px solid black;
+            position: relative;
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            position: absolute;
+
+            animation-name: moveBox;
+            animation-duration: 8s;
+        }
+
+        @keyframes moveBox {
+
+            /* Starting Point - Left Top */
+            0% {
+                left: 0px;
+                top: 0px;
+            }
+
+            /* Move Left to Right */
+            25% {
+                left: 600px;
+                top: 0px;
+            }
+
+            /* Move Right to Bottom */
+            50% {
+                left: 600px;
+                top: 400px;
+            }
+
+            /* Move Bottom to Left */
+            75% {
+                left: 0px;
+                top: 400px;
+            }
+
+            /* Move Left to Top */
+            100% {
+                left: 0px;
+                top: 0px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="box"></div>
+    </div>
+
+</body>
+</html>
+

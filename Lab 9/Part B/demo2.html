@@ -1,0 +1,760 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>Portfolio</title>
+
+  <style>
+  /* =========================
+   RESET
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* =========================
+   BODY
+========================= */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #eeeeee;
+}
+
+
+/* =========================
+   PAGE
+========================= */
+
+.page {
+    width: 100%;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+
+    background-color: #eeeeee;
+
+    padding: 0 20px;
+}
+
+
+/* =========================
+   SIDE DESIGN
+========================= */
+
+.side {
+    width: 55px;
+    min-height: 100vh;
+}
+
+
+.left-side,
+.right-side {
+    background-color: #b89a70;
+}
+
+
+/* =========================
+   MAIN CONTAINER
+========================= */
+
+.container {
+    width: 90%;
+    max-width: 950px;
+
+    background-color: white;
+}
+
+
+/* =========================
+   HEADER / NAVBAR
+========================= */
+
+header {
+    height: 60px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 0 30px;
+
+    background-color: #eaf4f7;
+}
+
+
+/* =========================
+   LOGO
+========================= */
+
+.logo {
+    width: 28px;
+    height: 28px;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    font-size: 20px;
+    font-weight: bold;
+
+    color: red;
+
+    border: 1px solid red;
+}
+
+
+/* =========================
+   NAVIGATION
+========================= */
+
+nav {
+    display: flex;
+    position: relative;
+    gap: 18px;
+}
+
+
+nav a {
+    text-decoration: none;
+
+    color: black;
+
+    font-size: 10px;
+}
+
+
+.Home {
+    color: red;
+}
+
+
+/* =========================
+   SEARCH
+========================= */
+
+.search {
+    display: flex;
+
+    align-items: center;
+}
+
+
+.search input {
+    width: 100px;
+
+    padding: 6px 8px;
+
+    border: none;
+
+    outline: none;
+
+    font-size: 9px;
+
+    background-color: white;
+}
+
+
+.search button {
+    background-color: red;
+
+    color: white;
+
+    border: none;
+
+    padding: 6px 12px;
+
+    font-size: 9px;
+
+    cursor: pointer;
+
+    border-radius: 0;
+}
+
+
+/* =========================
+   HERO SECTION
+========================= */
+
+.hero {
+    height: 300px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding: 30px 70px;
+
+    background-color: #eaf4f7;
+
+    overflow: hidden;
+}
+
+
+/* =========================
+   LEFT TEXT
+========================= */
+
+.left-text {
+    width: 50%;
+}
+
+
+.intro {
+    font-size: 13px;
+
+    margin-bottom: 10px;
+}
+
+
+.left-text h1 {
+    font-size: 36px;
+
+    letter-spacing: 1px;
+
+    margin-bottom: 12px;
+}
+
+
+.description {
+    font-size: 10px;
+
+    line-height: 1.6;
+
+    max-width: 280px;
+}
+
+
+/* =========================
+   HIRE BUTTON
+========================= */
+
+.hire-btn {
+    margin-top: 18px;
+
+    background-color: red;
+
+    color: white;
+
+    border: none;
+
+    border-radius: 20px;
+
+    padding: 9px 22px;
+
+    font-size: 10px;
+
+    cursor: pointer;
+}
+
+
+/* =========================
+   RIGHT IMAGE CONTAINER
+========================= */
+
+.right-img {
+    width: 50%;
+
+    height: 100%;
+
+    display: flex;
+
+    justify-content: center;
+    position: absolute;
+    bottom: 50%;
+    left: 45%;
+    align-items: flex-end;
+
+    /* Creates space between navbar and image */
+    padding-top: 30px;
+}
+
+
+/* =========================
+   PERSON IMAGE
+========================= */
+
+.right-img img {
+    height: 345px;
+
+    max-width: 100%;
+
+    object-fit: contain;
+
+    display: block;
+}
+
+
+/* =========================
+   BRAND SECTION
+========================= */
+
+.brand {
+    height: 70px;
+
+    display: flex;
+
+    justify-content: space-around;
+
+    align-items: center;
+
+    background-color: white;
+
+    color: #888;
+
+    font-size: 16px;
+}
+
+
+/* =========================
+   ABOUT SECTION
+========================= */
+
+.About {
+    display: flex;
+
+    gap: 45px;
+
+    padding: 45px 60px;
+
+    background-color: #fafafa;
+}
+
+
+/* =========================
+   EXPERIENCE
+========================= */
+
+.experience {
+    width: 25%;
+
+    padding-top: 20px;
+}
+
+
+.experience h2 {
+    font-size: 50px;
+
+    margin-bottom: 10px;
+}
+
+
+.experience p {
+    font-size: 10px;
+
+    line-height: 1.6;
+}
+
+
+/* =========================
+   SERVICES
+========================= */
+
+.services {
+    width: 75%;
+}
+
+
+.services h1,
+.services h2 {
+    font-size: 16px;
+
+    line-height: 1.4;
+
+    margin-bottom: 20px;
+}
+
+
+/* =========================
+   CARDS CONTAINER
+========================= */
+
+.cards {
+    display: flex;
+
+    gap: 12px;
+}
+
+
+/* =========================
+   NORMAL CARD
+========================= */
+
+.card {
+    width: 120px;
+
+    height: 110px;
+
+    background-color: #e7f0f3;
+
+    border-radius: 3px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    padding: 15px;
+
+    cursor: pointer;
+}
+
+
+.card h3 {
+    font-size: 9px;
+
+    margin-top: 8px;
+}
+
+
+/* =========================
+   ACTIVE CARD
+========================= */
+
+.card-active {
+    width: 120px;
+
+    height: 110px;
+
+    background-color: #1d2221;
+
+    color: white;
+
+    border-radius: 3px;
+
+    padding: 15px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    cursor: pointer;
+}
+
+
+.card-active h3 {
+    font-size: 9px;
+
+    margin-top: 8px;
+}
+
+
+.card-active p {
+    font-size: 7px;
+
+    margin-top: 5px;
+}
+
+
+/* =========================
+   ICON
+========================= */
+
+.icon {
+    width: 28px;
+    height: 28px;
+
+    border-radius: 50%;
+
+    background-color: #ff4b4b;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    font-size: 12px;
+
+    color: white;
+}
+
+
+/* =========================
+   FOOTER (OPTIONAL)
+========================= */
+
+footer {
+    padding: 15px;
+
+    text-align: center;
+
+    background-color: #222;
+
+    color: white;
+
+    font-size: 12px;
+}
+  </style>
+</head>
+
+
+<body>
+
+
+    <!-- MAIN PAGE -->
+
+    <div class="page">
+
+
+        <!-- LEFT SIDE DESIGN -->
+
+        <div class="side left-side"></div>
+
+
+        <!-- MAIN PORTFOLIO -->
+
+        <div class="container">
+
+
+            <!-- HEADER -->
+
+            <header>
+
+                <!-- LOGO -->
+
+                <div class="logo">
+                    B.
+                </div>
+
+
+                <!-- NAVIGATION -->
+
+                <nav>
+
+                    <a href="#" class="Home">Home</a>
+
+                    <a href="#">My Intro</a>
+
+                    <a href="#">Services</a>
+
+                    <a href="#">Pages</a>
+
+                    <a href="#">Contact</a>
+
+                </nav>
+
+
+                <!-- SEARCH -->
+
+                <form class="search">
+
+                    <input
+                        type="text"
+                        placeholder="Enter Keyword">
+
+                    <button type="submit">
+                        Search
+                    </button>
+
+                </form>
+
+            </header>
+
+
+
+            <!-- MAIN -->
+
+            <main>
+
+
+                <!-- HERO SECTION -->
+
+                <section class="hero">
+
+
+                    <!-- LEFT TEXT -->
+
+                    <div class="left-text">
+
+                        <p class="intro">
+                            Hi, I am Dhruv Kakkad
+                        </p>
+
+                        <h1>
+                            DESIGNER
+                        </h1>
+
+                        <p class="description">
+                            I love to work in UI/UX designing.
+                            I always try my best.
+                        </p>
+
+                        <button class="hire-btn">
+                            Hire Me
+                        </button>
+
+                    </div>
+
+
+
+                    <!-- RIGHT IMAGE -->
+
+                    <div class="right-img">
+
+                        <img
+                            src="./image_2.png"
+                            alt="Designer">
+
+                    </div>
+
+
+                </section>
+
+
+
+                <!-- BRAND SECTION -->
+
+                <section class="brand">
+
+                    <div>PayPal</div>
+
+                    <div>Google</div>
+
+                    <div>Samsung</div>
+
+                    <div>Lenovo</div>
+
+                    <div>Amazon</div>
+
+                </section>
+
+
+
+                <!-- ABOUT SECTION -->
+
+                <section class="About">
+
+
+                    <!-- EXPERIENCE -->
+
+                    <div class="experience">
+
+                        <h2>22</h2>
+
+                        <p>
+                            Years Of Experience
+                            <br>
+                            Working
+                        </p>
+
+                    </div>
+
+
+
+                    <!-- SERVICES -->
+
+                    <div class="services">
+
+                        <h2>
+                            I'm a designer & developer
+                            with a passion for
+                            <br>
+                            web design
+                        </h2>
+
+
+                        <!-- CARDS -->
+
+                        <div class="cards">
+
+
+                            <!-- CARD 1 -->
+
+                            <div class="card-active">
+
+                                <div class="icon">
+                                    💡
+                                </div>
+
+                                <h3>
+                                    Creative Design
+                                </h3>
+
+                                <p>
+                                    Explore More →
+                                </p>
+
+                            </div>
+
+
+
+                            <!-- CARD 2 -->
+
+                            <div class="card">
+
+                                <div class="icon">
+                                    💻
+                                </div>
+
+                                <h3>
+                                    Web Design
+                                </h3>
+
+                            </div>
+
+
+
+                            <!-- CARD 3 -->
+
+                            <div class="card">
+
+                                <div class="icon">
+                                    📚
+                                </div>
+
+                                <h3>
+                                    Brand Identity
+                                </h3>
+
+                            </div>
+
+
+                        </div>
+
+
+                    </div>
+
+
+                </section>
+
+
+            </main>
+
+
+        </div>
+
+
+        <!-- RIGHT SIDE DESIGN -->
+
+        <div class="side right-side"></div>
+
+
+    </div>
+
+
+</body>
+
+</html>
