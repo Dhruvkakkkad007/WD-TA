@@ -10,8 +10,17 @@
         padding: 0;
         box-sizing: border-box;
       }
+
       body {
-        font-family: Arial, Helvetica, sans-serif;
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        background-color: #b89a70;
+        
+        
+      }
+
+      .container {
+        width: 90%;
+        margin: auto;
         background-color: white;
       }
 
@@ -105,12 +114,14 @@
         padding: 30px;
         color: gray;
         font-size: 22px;
+        background-color: white;
       }
 
       .About {
         display: flex;
         gap: 50px;
         padding: 50px;
+        background-color: white;
       }
 
       .experience {
@@ -157,74 +168,78 @@
         border-radius: 8px;
         box-shadow: inset;
       }
-
     </style>
   </head>
   <body>
     <div class="container">
-      <header>
-        <div class="logo">B.</div>
-        <nav>
-          <a href="#" class="Home">Home</a>
-          <a href="#">My Intro</a>
-          <a href="#">Services</a>
-          <a href="#">Pages</a>
-          <a href="#">Contact</a>
-        </nav>
+      
+        <header>
+          <div class="logo">B.</div>
+          <nav>
+            <a href="#" class="Home">Home</a>
+            <a href="#">My Intro</a>
+            <a href="#">Services</a>
+            <a href="#">Pages</a>
+            <a href="#">Contact</a>
+          </nav>
 
-        <form class="search">
-          <input type="text" placeholder="Enter Keyword" />
-          <button type="submit">Search</button>
-        </form>
-      </header>
-
-      <main>
-        <section class="hero">
-          <div class="left-text">
-            <p>Hi, I am Dhruv Kakkad</p>
-            <h1>DESIGNER</h1>
-            <p>I love to work in UI/UX designing. I always try my best.</p>
-            <button class="hire-btn">Hire Me</button>
+          <div class="search">
+            <input type="text" placeholder="Enter Keyword" />
+            <button type="submit">Search</button>
+            <span style="font-size: 20px; cursor: pointer;">&#9789;</span>
           </div>
 
-          <div class="right-img">
-            <img src="./image_2.png" alt="LOGO" />
-          </div>
-        </section>
+          
+        </header>
 
-        <section class="brand">
-          <div>PayPal</div>
-          <div>Google</div>
-          <div>Samsung</div>
-          <div>Lenovo</div>
-          <div>Amazon</div>
-        </section>
+        <main>
+          <section class="hero">
+            <div class="left-text">
+              <p>Hi, I am Dhruv Kakkad</p>
+              <h1>DESIGNER</h1>
+              <p>I love to work in UI/UX designing. I always try my best.</p>
+              <button class="hire-btn">Hire Me</button>
+            </div>
 
-        <section class="About">
-          <div class="experience">
-            <h2>22</h2>
-            <p>Years Of Expereince of Working</p>
-          </div>
+            <div class="right-img">
+              <img src="./image_2.png" alt="LOGO" />
+            </div>
+          </section>
 
-          <div class="services">
-            <h1>I'm a designer & developer with a passion for web design</h1>
-            <div class="cards">
-              <div class="card-active">
-                <h3>Creative Design</h3>
-                <p>Explore More</p>
-              </div>
+          <section class="brand">
+            <div>PayPal</div>
+            <div>Google</div>
+            <div>Samsung</div>
+            <div>Lenovo</div>
+            <div>Amazon</div>
+          </section>
 
-              <div class="card">
-                <h3>Web Design</h3>
-              </div>
+          <section class="About">
+            <div class="experience">
+              <h2>22</h2>
+              <p>Years Of Expereince of Working</p>
+            </div>
 
-              <div class="card">
-                <h3>Brand Identity</h3>
+            <div class="services">
+              <h1>I'm a designer & developer with a passion for web design</h1>
+              <div class="cards">
+                <div class="card-active">
+                  <h3>Creative Design</h3>
+                  <p>Explore More</p>
+                </div>
+
+                <div class="card">
+                  <h3>Web Design</h3>
+                </div>
+
+                <div class="card">
+                  <h3>Brand Identity</h3>
+                </div>
               </div>
             </div>
-          </div>
-        </section>
-      </main>
-    </div>
+          </section>
+        </main>
+      </div>
+    
   </body>
 </html>
