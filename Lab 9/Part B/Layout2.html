@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        font-family:
+          "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans",
+          Arial, sans-serif;
+      }
+      .above {
+        background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQs9yNBk97wYU-lze7Dj8rNlu0QRP2u4pXYmO-2mYVGEHRVEKMBGWPe1O-z&s=10");
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 400px;
+
+        width: 100%;
+      }
+      nav {
+        display: flex;
+        justify-content: space-between;
+      }
+      .logo {
+        font-size: 30px;
+        color: red;
+        border: 2px solid red;
+      }
+      nav a {
+        text-decoration: none;
+        font-size: 20px;
+        margin: 20px;
+        color: black;
+      }
+
+      nav a:first-child {
+        color: red;
+      }
+
+      .search-btn input {
+        border-radius: 10px 0 0 10px;
+        padding: 5px;
+        border: none;
+      }
+
+      .search-btn button {
+        padding: 5px;
+        background-color: red;
+        color: white;
+        border: none;
+      }
+      span {
+        font-size: 20px;
+      }
+
+      .hero-text {
+        position: absolute;
+        top: 15%;
+        left: 25%;
+      }
+      .hero-text p {
+        font-size: 22px;
+      }
+      .hero-text h1 {
+        font-weight: bold;
+        font-size: 50px;
+      }
+
+      .hire-btn {
+        padding: 10px;
+        background-color: red;
+        color: white;
+        border: none;
+        border-radius: 10px 10px 10px 10px;
+      }
+
+      .brands {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .brands img {
+        height: 150px;
+        width: 170px;
+      }
+
+      .about {
+        display: flex;
+        justify-content: space-around;
+      }
+      .experience h1 {
+        font-size: 50px;
+      }
+
+      .experience h3 {
+        font-size: 25px;
+      }
+
+      .service h2 {
+        font-size: 30px;
+      }
+
+      .card-section {
+        display: flex;
+        gap: 50px;
+      }
+
+      .card {
+        height: 200px;
+        width: 320px;
+        border-radius: 5px;
+        background-color: aqua;
+      }
+
+      .card-active {
+        height: 200px;
+        width: 320px;
+
+        background-color: black;
+        color: white;
+        border-radius: 5px;
+      }
+
+      .card-active h3 {
+        margin-top: 125px;
+      }
+
+      .card h3 {
+        margin-top: 125px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="above">
+        <nav>
+          <div class="logo">B.</div>
+          <div class="nav-links">
+            <a href="">Home</a>
+            <a href="">My Intro</a>
+            <a href="">Services</a>
+            <a href="">Pages</a>
+          </div>
+
+          <div class="search-btn">
+            <input type="text" name="" id="" placeholder="Enter Keyword" />
+            <button>Searh Me</button>
+            <span> &#127769;</span>
+          </div>
+        </nav>
+
+        <div class="hero-text">
+          <p>Hi , I am Mary Ateer</p>
+          <h1>DESIGNER</h1>
+          <p>
+            I love to work in UI/UX designing. I always try my best to make good
+            UI with the best UX.
+          </p>
+          <button class="hire-btn">Hire Me</button>
+        </div>
+      </div>
+
+      <div class="below">
+        <div class="brands">
+          <div>
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/b/b5/PayPal.svg"
+              alt=""
+            />
+          </div>
+          <div>
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg"
+              alt="Google"
+            />
+          </div>
+          <div>
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSezJJq22_HerB3yp6qOdmzBUBkLEPOY8xEuh8JS5kobQ&s=10"
+              alt="Samsung"
+            />
+          </div>
+          <div>
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiOXQIM4PFoKs9koOfRX6FxiU5Rbc0_vib5sLqy7gxIQ&s=10"
+              alt="Lenovo"
+            />
+          </div>
+          <div>
+            <img
+              src="https://cdn.logojoy.com/wp-content/uploads/20230629132639/current-logo-600x338.png"
+              alt="Amazon"
+            />
+          </div>
+        </div>
+
+        <div class="about">
+          <div class="experience">
+            <h1>22</h1>
+            <h3>
+              Years of Experience <br />
+              Working
+            </h3>
+          </div>
+
+          <div class="service">
+            <h2>I'm a designer & developer with a passion for web design</h2>
+
+            <div class="card-section">
+              <div class="card-active">
+                <div class="icon"></div>
+                <h3>Creative Design</h3>
+                <p>Explore More</p>
+              </div>
+
+              <div class="card">
+                <div class="icon"></div>
+                <h3>Web Design</h3>
+              </div>
+
+              <div class="card">
+                <div class="icon"></div>
+                <h3>Brand Identity</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

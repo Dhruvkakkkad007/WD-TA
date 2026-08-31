@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Animation Demo</title>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #eee;
+        }
+
+        .container {
+            width: 500px;
+            height: 500px;
+            border: 3px solid black;
+            margin: 50px auto;
+            position: relative;
+            background: white;
+        }
+
+        .box {
+            width: 80px;
+            height: 80px;
+
+            background-color: red;
+
+            position: absolute;
+
+            animation-name: moveBox;
+            animation-duration: 8s;
+            animation-delay: 2s;
+            animation-iteration-count: infinite;
+            animation-direction: normal;
+            animation-timing-function: ease-out;
+            /* animation-direction: reverse; */
+        }
+
+        @keyframes moveBox {
+
+            0% {
+                left: 0;
+                top: 0;
+                background-color: red;
+            }
+
+            25% {
+                left: 420px;
+                top: 0;
+                background-color: yellow;
+            }
+
+            50% {
+                left: 420px;
+                top: 420px;
+                background-color: blue;
+            }
+
+            75% {
+                left: 0;
+                top: 420px;
+                background-color: green;
+            }
+
+            100% {
+                left: 0;
+                top: 0;
+                background-color: red;
+            }
+
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <h1 style="text-align:center;">
+        CSS Animation Demo
+    </h1>
+
+    <div class="container">
+
+        <div class="box"></div>
+
+    </div>
+
+</body>
+</html>

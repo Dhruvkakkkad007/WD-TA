@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>CSS Screensaver</title>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: black;
+            overflow: hidden;
+        }
+
+        .screen {
+            width: 100vw;
+            height: 100vh;
+            position: relative;
+        }
+
+        .ball {
+            width: 80px;
+            height: 80px;
+
+            border-radius: 50%;
+
+            background-color: red;
+
+            position: absolute;
+
+            animation: screensaver 8s infinite linear alternate;
+        }
+
+        @keyframes screensaver {
+
+            0% {
+                left: 0;
+                top: 0;
+            }
+
+            25% {
+                left: 90%;
+                top: 10%;
+            }
+
+            50% {
+                left: 70%;
+                top: 80%;
+            }
+
+            75% {
+                left: 10%;
+                top: 60%;
+            }
+
+            100% {
+                left: 90%;
+                top: 90%;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="screen">
+
+        <div class="ball"></div>
+
+    </div>
+
+</body>
+
+</html>
