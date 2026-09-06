@@ -1,259 +1,260 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
 
-  <style>
-    .container {
-      width: 90%;
-      margin: auto;
-      
-    }
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      .container {
+        width: 90%;
+        margin: auto;
+      }
 
-    
-    header {
-      height: 100px;
-      display: flex;
-      align-items: center;
-      border-bottom: 2px solid black;
-      justify-content: space-between;
-    }
+      header {
+        height: 100px;
+        display: flex;
+        align-items: center;
+        border-bottom: 2px solid black;
+        justify-content: space-between;
+      }
 
-   
+      img {
+        height: 90px;
+        width: 99px;
+        padding-left: 20px;
+      }
 
-     img {
-      height: 90px;
-      width: 99px;
-      padding-left: 20px;
-    }
+      nav {
+        width: 70%;
+        text-align: center;
+      }
 
-    
-    nav {
-      width: 70%;
-      text-align: center;
-    }
+      nav a {
+        text-decoration: none;
+        text-align: center;
+        margin: 10px;
+        font-size: 20px;
+      }
 
-    nav a {
-      text-decoration: none;
-      text-align: center;
-      margin: 10px;
-      font-size: 20px;
-    }
+      main {
+        display: flex;
+        min-height: 400px;
+        align-items: stretch;
+      }
 
-    
-    main {
-      display: flex;
-      min-height: 400px;
-      align-items: stretch;
-    }
+      .left {
+        width: 20%;
+        display: flex;
+        flex-direction: column;
+        background-color: red;
+        gap: 6px;
+      }
 
-    
-    .left {
-      width: 20%;
-      display: flex;
-      flex-direction: column;
-      background-color: red;
-      gap: 6px;
-    }
+      .menu {
+        background-color: red;
+        color: black;
+        border: 1px solid yellow;
+        font-size: 20px;
+        padding: 30px;
+        text-align: center;
+      }
 
-    .menu {
-      background-color: red;
-      color: black;
-      border: 1px solid yellow;
-      font-size: 20px;
-      padding: 30px;
-      text-align: center;
-    }
+      .sidebar {
+        background-color: red;
+        border: 1px solid yellow;
+        text-align: center;
+        height: 50px;
+        font-size: 20px;
+        padding: 2px;
+      }
 
-    .sidebar {
-      background-color: red;
-      border: 1px solid yellow;
-      text-align: center;
-      height: 50px;
-      font-size: 20px;
-      padding: 2px;
-    }
+      .right-content {
+        width: 80%;
+        padding: 10px;
+        border: 2px solid black;
+      }
 
+      .card {
+        width: 100px;
+      }
 
-    .right-content {
-      width: 80%;
-      padding: 10px;
-      border: 2px solid black;
-    }
+      .card img {
+        height: 115px;
+        width: 120px;
+      }
 
-    
-    .card {
-      width: 100px;
-    }
+      .card p {
+        margin: 2px 0;
+        padding: 2px;
+        padding-left: 22px;
+      }
 
-   
+      footer {
+        background-color: blue;
+        text-align: center;
+        color: white;
+        padding: 10px;
+        font-size: 20px;
+      }
 
-    .card img {
-      height: 115px;
-      width: 120px;
-    }
+      .firstrow,
+      .secondrow {
+        display: flex;
+        gap: 70px;
+        margin-bottom: 20px;
+      }
 
-    .card p {
-      margin: 2px 0;
-      padding: 2px;
-      padding-left: 22px;
-    }
+      @media screen and (max-width: 768px) {
+        header {
+          height: auto;
+          flex-direction: column;
+          padding: 10px;
+        }
 
-    
-    footer {
-      background-color: blue;
-      text-align: center;
-      color: white;
-      padding: 10px;
-      font-size: 20px;
-    }
+        nav {
+          width: 100%;
+        }
 
-    .firstrow,
-    .secondrow {
-      display: flex;
-      gap: 70px;
-      margin-bottom: 20px;
-    }
-  </style>
-</head>
+        nav a {
+          font-size: 20px;
+          margin: 5px;
+        }
+      }
+      @media screen and (min-width: 768px) {
+        .firstrow,
+        .secondrow {
+          flex-wrap: wrap;
+          background-color: red;
+        }
+      }
+      @media screen and (max-width: 768px) {
+        main {
+          flex-direction: column;
+        }
+        .left {
+          width: 100%;
+        }
+        .right-content {
+          width: 100%;
+        }
 
-<body>
+        .firstrow,
+        .secondrow {
+          flex-wrap: wrap;
+          background-color: red;
+        }
+      }
+    </style>
+  </head>
 
-  <div class="container">
-
-    
-    <header>
-
-      
+  <body>
+    <div class="container">
+      <header>
         <img
           src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGylQPE46aHi7jJKUq8v7iYapnLlgPM2g-uQeXQDHLYQ&s=10"
           alt="Logo"
         />
-     
 
-      
-      <nav>
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Contact</a>
-        <a href="#">Login</a>
-      </nav>
+        <nav>
+          <a href="#">Home</a>
+          <a href="#">About</a>
+          <a href="#">Contact</a>
+          <a href="#">Login</a>
+        </nav>
+      </header>
 
-    </header>
+      <!-- MAIN CONTENT -->
+      <main>
+        <!-- ASIDE / SIDEBAR -->
+        <div class="left">
+          <div class="sidebar">Sidebar</div>
 
-
-    <!-- MAIN CONTENT -->
-    <main>
-
-      <!-- ASIDE / SIDEBAR -->
-     <div class="left">
-
-        <div class="sidebar">Sidebar</div>
-
-        <div class="menu">Home</div>
-        <div class="menu">Placement</div>
-        <div class="menu">Recruitment</div>
-        <div class="menu">Faculty</div>
-        <div class="menu">News</div>
-
-      </div>
-
-
-      <!-- MAIN CONTENT SECTION -->
-      <div class="right-content">
-
-        <!-- FIRST ROW -->
-        <div class="firstrow">
-
-          <div class="card">
-            <img
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGylQPE46aHi7jJKUq8v7iYapnLlgPM2g-uQeXQDHLYQ&s=10"
-              alt="Firoz"
-            />
-            <p>Firoz</p>
-            <p>BE, MTech (CSE)</p>
-          </div>
-
-
-          <div class="card">
-            <img
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGylQPE46aHi7jJKUq8v7iYapnLlgPM2g-uQeXQDHLYQ&s=10"
-              alt="Firoz"
-            />
-            <p>Firoz</p>
-            <p>BE, MTech (CSE)</p>
-          </div>
-
+          <div class="menu">Home</div>
+          <div class="menu">Placement</div>
+          <div class="menu">Recruitment</div>
+          <div class="menu">Faculty</div>
+          <div class="menu">News</div>
         </div>
 
+        <!-- MAIN CONTENT SECTION -->
+        <div class="right-content">
+          <!-- FIRST ROW -->
+          <div class="firstrow">
+            <div class="card">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGylQPE46aHi7jJKUq8v7iYapnLlgPM2g-uQeXQDHLYQ&s=10"
+                alt="Firoz"
+              />
+              <p>Firoz</p>
+              <p>BE, MTech (CSE)</p>
+            </div>
 
-        <!-- SECOND ROW -->
-        <div class="secondrow">
-
-          <div class="card">
-            <img
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGylQPE46aHi7jJKUq8v7iYapnLlgPM2g-uQeXQDHLYQ&s=10"
-              alt="Firoz"
-            />
-            <p>Firoz</p>
-            <p>BE, MTech (CSE)</p>
+            <div class="card">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGylQPE46aHi7jJKUq8v7iYapnLlgPM2g-uQeXQDHLYQ&s=10"
+                alt="Firoz"
+              />
+              <p>Firoz</p>
+              <p>BE, MTech (CSE)</p>
+            </div>
           </div>
 
+          <!-- SECOND ROW -->
+          <div class="secondrow">
+            <div class="card">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGylQPE46aHi7jJKUq8v7iYapnLlgPM2g-uQeXQDHLYQ&s=10"
+                alt="Firoz"
+              />
+              <p>Firoz</p>
+              <p>BE, MTech (CSE)</p>
+            </div>
 
-          <div class="card">
-            <img
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGylQPE46aHi7jJKUq8v7iYapnLlgPM2g-uQeXQDHLYQ&s=10"
-              alt="Firoz"
-            />
-            <p>Firoz</p>
-            <p>BE, MTech (CSE)</p>
+            <div class="card">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGylQPE46aHi7jJKUq8v7iYapnLlgPM2g-uQeXQDHLYQ&s=10"
+                alt="Firoz"
+              />
+              <p>Firoz</p>
+              <p>BE, MTech (CSE)</p>
+            </div>
+
+            <div class="card">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGylQPE46aHi7jJKUq8v7iYapnLlgPM2g-uQeXQDHLYQ&s=10"
+                alt="Firoz"
+              />
+              <p>Firoz</p>
+              <p>BE, MTech (CSE)</p>
+            </div>
+
+            <div class="card">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGylQPE46aHi7jJKUq8v7iYapnLlgPM2g-uQeXQDHLYQ&s=10"
+                alt="Firoz"
+              />
+              <p>Firoz</p>
+              <p>BE, MTech (CSE)</p>
+            </div>
+
+            <div class="card">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGylQPE46aHi7jJKUq8v7iYapnLlgPM2g-uQeXQDHLYQ&s=10"
+                alt="Firoz"
+              />
+              <p>Firoz</p>
+              <p>BE, MTech (CSE)</p>
+            </div>
           </div>
-
-
-          <div class="card">
-            <img
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGylQPE46aHi7jJKUq8v7iYapnLlgPM2g-uQeXQDHLYQ&s=10"
-              alt="Firoz"
-            />
-            <p>Firoz</p>
-            <p>BE, MTech (CSE)</p>
-          </div>
-
-
-          <div class="card">
-            <img
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGylQPE46aHi7jJKUq8v7iYapnLlgPM2g-uQeXQDHLYQ&s=10"
-              alt="Firoz"
-            />
-            <p>Firoz</p>
-            <p>BE, MTech (CSE)</p>
-          </div>
-
-
-          <div class="card">
-            <img
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGylQPE46aHi7jJKUq8v7iYapnLlgPM2g-uQeXQDHLYQ&s=10"
-              alt="Firoz"
-            />
-            <p>Firoz</p>
-            <p>BE, MTech (CSE)</p>
-          </div>
-
         </div>
+      </main>
 
+      <!-- FOOTER -->
+      <footer>Darshan Uni Rajkot</footer>
     </div>
-
-    </main>
-
-
-    <!-- FOOTER -->
-    <footer>
-      Darshan Uni Rajkot
-    </footer>
-
-  </div>
-
-</body>
+  </body>
 </html>

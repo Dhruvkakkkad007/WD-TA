@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-     body {
-            font-family: Arial;
-        }
+      body {
+        font-family: Arial;
+      }
       .page {
         width: 90%;
         background-color: aqua;
@@ -26,7 +26,6 @@
         display: flex;
         gap: 50px;
         height: 250px;
-
       }
 
       .left-side {
@@ -40,7 +39,7 @@
         margin-bottom: 15px;
       }
 
-      .right-side{
+      .right-side {
         width: 30%;
       }
 
@@ -58,44 +57,46 @@
         padding: 10px;
       }
 
-      .Content-title{
+      .Content-title {
         margin-bottom: 10px;
       }
 
-      @media screen and (max-width:768px) {
+     
+
+     
+
+      /* Tablet and Mobile */
+      @media screen and (max-width: 768px) {
         .content {
           flex-direction: column;
           gap: 10px;
           height: auto;
         }
 
-        .left-side{
+        .left-side {
           width: 100%;
         }
 
-        .right-side{
+        .right-side {
           width: 100%;
         }
 
-        .SideBar{
+        .SideBar {
           margin-top: 10px;
         }
-
-        @media  (min-width:500px) {
-          .page {
-            background-color: green;
-          }
-
-          @media screen and (max-width:500px) {
-            .page{
-              background-color: firebrick;
-            }
-            
-          }
-        }
-
-      
       }
+
+      /* Small Mobile */
+
+      @media screen and (max-width: 500px) {
+        .page {
+          background-color: firebrick;
+        }
+      }
+
+      /* Between 501px and 768px */
+
+    
       
     </style>
   </head>
@@ -105,11 +106,8 @@
       <div class="header">Header</div>
 
       <div class="content">
-        
-       
-        
         <div class="left-side">
-            <div class="Content-title">Content</div>
+          <div class="Content-title">Content</div>
           <div class="Entry">Entry</div>
           <div class="Entry">Entry</div>
           <div class="Entry">Entry</div>
@@ -118,7 +116,6 @@
         <div class="right-side">
           <div class="SideBar">SideBar</div>
         </div>
-
       </div>
 
       <div class="footer">&copy; Darshan University Rajkot</div>
