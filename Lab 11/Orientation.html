@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Orientation Demo</title>
+
+    <style>
+
+        .box {
+            width: 300px;
+            height: 200px;
+            background-color: blue;
+            color: white;
+            font-size: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Portrait */
+        @media (orientation: portrait) {
+            .box {
+                background-color: green;
+            }
+        }
+
+        /* Landscape */
+        @media (orientation: landscape) {
+            .box {
+                background-color: orange;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="box">
+        Rotate Me!
+    </div>
+
+</body>
+</html>
