@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul li:nth-child(2){
+            color: red;
+        }
+        li::before{
+            content: "Hello";
+            margin-right: 5px;
+        }
+
+        li::after{
+            content:"good";
+            margin-left: 5px;
+        }
+
+        li::selection{
+            background-color: yellow;
+            color: black;
+        }
+        </style>
+</head>
+<body>
+    <ul>
+    <li>Apple</li>
+    <li>Banana</li>
+    <li>Mango</li>
+</ul>
+</body>
+</html>

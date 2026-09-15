@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a:link{
+            color: orange;
+        }
+
+        
+
+        a:visited{
+            color: green;
+        }
+
+        p::first-line{
+            font-weight: bold;
+            color: green;
+        }
+        p::first-letter{
+            color: red;
+            font-size: 200%;
+        }
+
+        ::selection{
+            background-color: yellow;
+            color: black;
+        }
+
+        button{
+            background-color: blue;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover{
+            background-color: black;
+        }
+
+        input:focus{
+            border: 2px solid blue;
+            outline: none; 
+        }
+    </style>
+</head>
+<body>
+    <a href="https://www.google.com">Visit Google</a>
+    <a href="https://www.wikipedia.org">Visit Wikipedia</a>
+
+    <p>Click the link above to visit Google. <br>The link will appear orange before it is clicked and green after it has been visited.</p>
+
+    <button>Click Me</button>
+
+    <input type="text" name="" id="">
+</body>
+</html>

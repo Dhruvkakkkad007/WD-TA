@@ -5,14 +5,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Moving Div</title>
 
     <style>
-
         .container {
-            width: 700px;
-            height: 500px;
+            width: 100vh;
+            height: 100vh;
             border: 2px solid black;
             position: relative;
         }
@@ -21,50 +19,49 @@
             width: 100px;
             height: 100px;
             background-color: red;
+
             position: absolute;
 
             animation-name: moveBox;
             animation-duration: 8s;
-            
-            animation-iteration-count: infinite;
-            
+            animation-delay: 2s;
+            animation-iteration-count: 1;
+            animation-timing-function: linear;
         }
 
         @keyframes moveBox {
 
             /* Starting Point - Left Top */
             0% {
-                left: 0px;
-                top: 0px;
+                left: 0;
+                top: 0;
             }
 
             /* Move Left to Right */
             25% {
-                left: 600px;
-                top: 0px;
+                left: calc(100% - 100px);
+                top: 0;
             }
 
             /* Move Right to Bottom */
             50% {
-                left: 600px;
-                top: 400px;
+                left: calc(100% - 100px);
+                top: calc(100% - 100px);
             }
 
             /* Move Bottom to Left */
             75% {
-                left: 0px;
-                top: 400px;
+                left: 0;
+                top: calc(100% - 100px);
             }
 
             /* Move Left to Top */
             100% {
-                left: 0px;
-                top: 0px;
+                left: 0;
+                top: 0;
             }
         }
-
     </style>
-
 </head>
 
 <body>
@@ -76,3 +73,4 @@
 </body>
 
 </html>
+

@@ -1,0 +1,278 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Website</title>
+
+    
+    <style>
+      /* Remove default spacing */
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      /* Whole page */
+      body {
+        font-family: Arial;
+        font-size: 12px;
+      }
+
+      /* ================= HEADER ================= */
+
+      header {
+        width: 90%;
+        height: 90px;
+
+        margin: 5px auto;
+
+        padding: 10px;
+
+        background: #aaa0a0;
+
+        border-bottom: 4px solid green;
+      }
+
+      /* Logo */
+
+      header img {
+        width: 50px;
+        height: 50px;
+      }
+
+      /* Navigation */
+
+      nav {
+        float: right;
+      }
+
+      nav a {
+        color: white;
+        text-decoration: none;
+
+        margin-left: 12px;
+      }
+
+      /* Website tagline */
+
+      header p {
+        color: turquoise;
+        margin-top: 5px;
+      }
+
+      /* ================= MAIN ================= */
+
+      main {
+        width: 92%;
+        margin: 10px auto;
+      }
+
+      /* ================= FEATURED ================= */
+
+      .featured {
+        border: 1px solid #789;
+        padding: 8px;
+
+        display: flex;
+        gap: 20px;
+      }
+
+      .featured img {
+        width: 160px;
+        height: 80px;
+      }
+
+      .featured p {
+        margin-bottom: 8px;
+      }
+
+      /* Button */
+
+      button {
+        padding: 5px 15px;
+
+        border-radius: 15px;
+        border: 1px solid #777;
+
+        background: lightblue;
+      }
+
+      /* ================= CONTENT ================= */
+
+      .content {
+        display: flex;
+
+        gap: 30px;
+
+        margin-top: 10px;
+      }
+
+      /* Main Article */
+
+      article {
+        flex: 1;
+      }
+
+      article h1 {
+        font-size: 18px;
+        margin-bottom: 10px;
+      }
+
+      article p {
+        margin-bottom: 10px;
+      }
+
+      article li {
+        margin-left: 20px;
+        margin-bottom: 5px;
+      }
+
+      /* ================= SIDEBAR ================= */
+
+      aside {
+        width: 230px;
+      }
+
+      aside h2 {
+        font-size: 15px;
+        margin-bottom: 10px;
+      }
+
+      /* News */
+
+      .news {
+        display: flex;
+
+        gap: 8px;
+
+        margin-bottom: 10px;
+      }
+
+      .news img {
+        width: 70px;
+        height: 60px;
+      }
+
+      .news p {
+        font-size: 11px;
+      }
+
+      time {
+        border: 1px solid #999;
+        font-size: 10px;
+      }
+
+      /* ================= FOOTER ================= */
+
+      footer {
+        text-align: center;
+
+        background: #eee;
+
+        padding: 15px;
+
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header>
+      <img src="https://placehold.co/50x50" alt="Logo" />
+
+      <nav>
+        <a href="#">Home</a>
+        <a href="#">Services</a>
+        <a href="#">Gallery</a>
+        <a href="#">Company</a>
+        <a href="#">Contact</a>
+      </nav>
+
+      <p>A free ecommerce solution</p>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+      <!-- Featured Section -->
+      <section class="featured">
+        <img src="https://placehold.co/160x80" alt="Featured Image" />
+
+        <div>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+
+          <button>Read More</button>
+        </div>
+      </section>
+
+      <!-- Content + Sidebar -->
+      <section class="content">
+        <!-- Main Article -->
+        <article>
+          <h1>Welcome to our WEBSITE!</h1>
+
+          <p>
+            This is a professional XHTML/CSS layout provided by TemplateMo.com
+            for free of charge.
+          </p>
+
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+
+          <ul>
+            <li>Excepteur sint occaecat cupidatat non proident.</li>
+            <li>Duis aute irure dolor in reprehenderit.</li>
+          </ul>
+
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut enim ad
+            minim veniam, quis nostrud exercitation.
+          </p>
+        </article>
+
+        <!-- Sidebar -->
+        <aside>
+          <h2>Latest News</h2>
+
+          <article class="news">
+            <img src="https://placehold.co/70x60" alt="News" />
+
+            <div>
+              <time>OCT 29, 2024</time>
+              <p>Latest news description goes here.</p>
+            </div>
+          </article>
+
+          <article class="news">
+            <img src="https://placehold.co/70x60" alt="News" />
+
+            <div>
+              <time>OCT 29, 2024</time>
+              <p>Latest news description goes here.</p>
+            </div>
+          </article>
+
+          <article class="news">
+            <img src="https://placehold.co/70x60" alt="News" />
+
+            <div>
+              <time>OCT 29, 2024</time>
+              <p>Latest news description goes here.</p>
+            </div>
+          </article>
+        </aside>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <p>© 2024 My Website</p>
+    </footer>
+  </body>
+</html>
