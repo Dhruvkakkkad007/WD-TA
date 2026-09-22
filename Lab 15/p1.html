@@ -5,102 +5,206 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-        nav {
-            display: flex;
-            justify-content: center;
-            background-color: gray; 
-            padding: 10px;
-        }
-        nav a{
-            text-decoration: none;
-            margin: 10px;
-            color: white;
-        }
-        .main-text{
-            font-weight: bolder;
-            font-size: xx-large;
-            text-align: center;
-             background-color: gainsboro;
-        }
+      body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family:
+          "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans",
+          Arial, sans-serif;
+      }
 
-        .hero{
-            display: flex;
-            justify-content: space-around;
-            background-color: gainsboro;
-            padding: 10px;
-            margin-top: 10px;
-            
-        }
+      nav {
+        height: 50px;
+        background-color: rgb(57, 57, 57);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
 
-        .offer{
-            text-align: center;
-            background-color: darkblue;
-            color: white;
+      nav a {
+        text-decoration: none;
+        color: white;
+        padding-right: 25px;
+      }
 
-            padding: 10px;
-        }
-        button{
-            border-radius: 4px;
-            border: none;
-            background-color: orange;
-            color: white;
-            padding: 10px;
-            margin: 10px;
-            cursor: pointer;
-        }
+      .dkjs {
+        display: flex;
+        justify-content: center;
+        font-size: 200%;
+      }
 
-        main{
-            background-color: gainsboro;   
-            display: flex;
-            flex-direction: column;
-        }
+      .book {
+        width: 400px;
+        border: 2px solid black;
+        height: 600px;
+        margin-left: 100px;
+        border-radius: 10px;
+      }
 
-        .image{
-            width: 50%;
-        }
+      .part1 {
+        /* margin: 0; */
+        height: 20%;
+        border-radius: 10px 10px 0px 0px;
+        background-color: gainsboro;
+        /* padding: 10px; */
+      }
 
-        .image img{
-            height: 400px;
-            width: 400px;
-        }
+      .part2 {
+        /* margin: 0; */
+        height: 30%;
+      }
+
+      .part3 {
+        background-color: yellow;
+        height: 50%;
+        border-radius: 0 0 10px 10px;
+      }
+
+      p {
+        margin: 0;
+      }
+
+      h1 {
+        margin: 0;
+      }
+
+      .reilly {
+        background-color: rgb(53, 53, 53);
+        color: white;
+        width: 80px;
+        display: flex;
+        justify-content: center;
+        margin-left: 30px;
+        margin-bottom: 10px;
+      }
+
+      .group {
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        align-content: end;
+        text-align: right;
+        padding: 5px;
+      }
+
+      .part2 p {
+        display: flex;
+        text-align: end;
+        font-size: 400%;
+        padding: 15px;
+        justify-content: end;
+      }
+
+      .part3 h1 {
+        display: flex;
+        justify-content: end;
+        font-size: 1700%;
+      }
+
+      .part3 p {
+        transform: rotate(-90deg);
+        color: yellow;
+        position: relative;
+        left: 20px;
+        top: 60px;
+        font-size: 170%;
+      }
+
+      main {
+        display: flex;
+      }
+
+      .right {
+        margin-left: 170px;
+        margin-top: 100px;
+        text-align: center;
+        font-size: 150%;
+      }
+
+      .right button {
+        width: 250px;
+        background-color: orange;
+        padding: 10px;
+        border-radius: 5px;
+        border: none;
+        color: white;
+      }
+
+      footer {
+        background-color: rgb(0, 0, 59);
+        margin-top: 40px;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 50px;
+      }
+
+      footer button {
+        margin-top: 10px;
+      }
     </style>
   </head>
+
   <body>
-    <header>
-      <nav>
-        <a href="#">The Book Series</a>
-        <a href="#">Testimonials</a>
-        <a href="#">The Author</a>
-        <a href="#">Free Resources</a>
-      </nav>
-    </header>
-    <main>
-         <p class="main-text">You dont know JavaScript</p>
-      <section class="hero">
-        
-        <div class="image">
-            <img src="demo.png" alt="">
-        </div>  
+    <div class="container">
+      <header>
+        <nav>
+          <a href="#">The Book Series</a>
+          <a href="#">Testimonials</a>
+          <a href="#">The Author</a>
+          <a href="#">Free Resources</a>
+        </nav>
+      </header>
 
-        <div class="text">
-          
+      <h3 class="dkjs">You don't Know JavaScript ?</h3>
+      <main>
+        <div class="book">
+          <div class="part1">
+            <div class="reilly">O'REILLY</div>
+            <div class="group">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Possimus, odit.
+              </p>
+              <p>~Someone</p>
+              <p>KYLE SIMPSON</p>
+            </div>
+          </div>
+          <div class="part2">
+            <p>Complete <br />Series</p>
+          </div>
+          <div class="part3">
+            <p>You Don't Know</p>
+            <h1>JS</h1>
+          </div>
+        </div>
 
-          <p>Don't just drift through Javascript</p>
-
-          <p>Understand how Javascript works</p>
-
-          <p>Start your journey through the bumpy side of Javascript</p>
-
+        <div class="right">
+          Don't just drift through javascript
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          Understand how javascript works
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          Start your journey through the bumpy side of javascript
+          <br />
+          <br />
+          <br />
           <button>ORDER YOUR COPY NOW</button>
         </div>
-      </section>
       </main>
-
-      <section class="offer">
-        <p>The first ebook in the book series is absolutely free.</p>
-
+      <footer>
+        <p>This first ebook in the series absolutely free.</p>
         <button>FIND OUT MORE ABOUT THIS OFFER</button>
-      </section>
-  
+      </footer>
+    </div>
   </body>
 </html>
