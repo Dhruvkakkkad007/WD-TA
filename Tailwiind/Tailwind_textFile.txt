@@ -1,0 +1,148 @@
+Tailwind Basics:
+
+1.Important typography properties:
+There are 6 important properties you should understand first.
+Property	Meaning
+Font Size	Controls text size
+Font Weight	Controls text thickness
+Text Color	Changes text color
+Text Alignment	Aligns text
+Line Height	Controls space between lines(VERTICAL SPACE)
+Letter Spacing	Controls space between letters(HORIZONTAL SPACE)
+
+
+2. Font Size – text-*
+Definition: Font size controls how small or large the text appears on a webpage.
+
+Tailwind provides ready-made classes to change text size.
+Tailwind Class	Meaning
+text-xs	: Extra small
+text-sm	 : Small
+text-base : 	Normal
+text-lg	: Large
+text-xl  : Extra large
+text-2xl :2 times larger size
+text-3xl :Bigger heading
+text-4xl  :Very big heading
+
+
+3. Font Weight – font-*
+Definition: Font weight controls how thick or bold the text appears.
+Tailwind Class	Meaning
+font-thin	Very thin
+font-light	Light
+font-normal	Normal
+font-medium	Medium
+font-semibold	Semi-bold
+font-bold	Bold
+font-extrabold	Extra bold
+font-black	Very thick
+
+4. Text Color – text-color
+Definition: Text color is used to change the color of written content.
+Commonly Used class
+Class	Color
+text-red-500	Red
+text-blue-500	Blue
+text-green-500	Green
+text-yellow-500	Yellow
+text-purple-500	Purple
+text-gray-500	Gray
+text-white	White
+
+
+Important: In Tailwind, the number represents a shade. For example, text-blue-500 is a medium blue shade.
+
+5. Text Alignment – text-*
+Definition: Text alignment controls the position of text.
+
+Tailwind provides four commonly used alignment classes.
+Class	Meaning
+text-left	Align text left
+text-center	Align text center
+text-right	Align text right
+text-justify	Align text evenl6. Line Height – leading-*
+Definition: Line height controls the vertical space between lines of texty on both sides
+
+
+6. Line Height – leading-*
+Definition: Line height controls the vertical space between lines of text
+
+Class	Meaning
+leading-none	Very little line spacing
+leading-tight	Tight line spacing
+leading-normal	Normal line spacing
+leading-relaxed	Comfortable line spacing
+leading-loose	More line spacing
+
+IMP point:For long paragraphs, use leading-relaxed to make reading comfortable.
+
+7. Letter Spacing – tracking-*
+Definition: Letter spacing controls the horizontal space between individual letters.
+
+Class	Meaning
+tracking-tighter Very close letters
+tracking-tight	Close letters
+tracking-normal	Normal spacing
+tracking-wide	Wider spacing
+tracking-wider	More spacing
+tracking-widest	Maximum spacing
+
+
+9. Margin – m-*
+Definition: Margin adds space OUTSIDE an element.
+
+For example, if you want space between two paragraphs, you can use margin.
+
+Class	Meaning
+m-4	Margin all sides
+mt-4	Margin top
+mb-4	Margin bottom
+ml-4	Margin left
+mr-4	Margin right
+mx-4	Margin left and right
+my-4	Margin top and bottom
+
+10.Padding:
+Definition: Padding adds space INSIDE an element, between its content and its border
+Class	Meaning
+p-4	Padding all sides
+pt-4	Padding top
+pb-4	Padding bottom
+pl-4	Padding left
+pr-4	Padding right
+px-4	Padding left and right
+py-4	Padding top and bottom
+
+
+11. Gap – gap-*
+Definition: Gap adds space between child elements inside Flexbox or Grid layouts.
+point: Use gap when you want equal spacing between multiple elements.
+
+Important classes:
+- gap-2
+- gap-4
+- gap-6
+- gap-8
+
+
+12. Understanding the Tailwind Spacing Scale
+Tailwind uses a spacing scale for margin, padding and gap.
+Class	Approximate size
+p-1	4px
+p-2	8px
+p-3	12px
+p-4	16px
+p-5	20px
+p-6	24px
+p-8	32px
+p-10	40px
+p-12	48px
+
+The same spacing scale applies to classes like m-4, mt-4, gap-4, etc.
+
+Important: The number after the class controls the amount of spacing. A larger number means more spacing.
+
+
+
+
