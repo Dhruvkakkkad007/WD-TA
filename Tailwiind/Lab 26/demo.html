@@ -1,0 +1,376 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Tailwind CSS - Sizing Practicals</title>
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+</head>
+
+<body class="bg-gray-100">
+
+    <!-- MAIN HEADING -->
+    <header class="bg-blue-600 text-white text-center p-6">
+        <h1 class="text-3xl font-bold">
+            Tailwind CSS - Sizing Practicals
+        </h1>
+        <p class="mt-2">
+            Practicing Width, Height, Responsive Design and Layout
+        </p>
+    </header>
+
+
+    <!-- PRACTICAL 1 -->
+    <!-- 3 Image Gallery -->
+
+    <section class="p-6">
+
+        <h2 class="text-2xl font-bold mb-4">
+            1. Responsive 3 Image Gallery
+        </h2>
+
+        <div class="grid grid-cols-3 gap-4">
+
+            <img
+                src="https://picsum.photos/id/1011/600/400"
+                alt="Mountain"
+                class="w-full h-64 object-cover rounded-lg"
+            >
+
+            <img
+                src="https://picsum.photos/id/1015/600/400"
+                alt="Forest"
+                class="w-full h-64 object-cover rounded-lg"
+            >
+
+            <img
+                src="https://picsum.photos/id/1018/600/400"
+                alt="Nature"
+                class="w-full h-64 object-cover rounded-lg"
+            >
+
+        </div>
+
+    </section>
+
+
+    <!-- PRACTICAL 2 -->
+    <!-- Fixed Size Product Card -->
+
+    <section class="p-6">
+
+        <h2 class="text-2xl font-bold mb-4">
+            2. Fixed Size Product Card
+        </h2>
+
+        <div class="w-72 h-96 bg-white shadow-lg rounded-xl overflow-hidden">
+
+            <img
+                src="https://picsum.photos/id/250/500/400"
+                alt="Product Image"
+                class="w-full h-48 object-cover"
+            >
+
+            <div class="p-4">
+
+                <h3 class="text-xl font-bold">
+                    Smart Watch
+                </h3>
+
+                <p class="text-gray-600 mt-2">
+                    A stylish smartwatch with modern
+                    features and long battery life.
+                </p>
+
+                <p class="text-green-600 font-bold mt-3">
+                    Price: ₹2,499
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- PRACTICAL 3 -->
+    <!-- Sidebar and Main Content -->
+
+    <section class="p-6">
+
+        <h2 class="text-2xl font-bold mb-4">
+            3. Sidebar and Content Layout
+        </h2>
+
+        <div class="min-h-80 flex  flex-row">
+
+            <!-- Left Sidebar -->
+
+            <aside class="w-full md:w-64 bg-gray-800 text-white p-6">
+
+                <h3 class="text-2xl font-bold mb-6">
+                    Dashboard
+                </h3>
+
+                <nav class="space-y-4">
+
+                    <p>Home</p>
+                    <p>Profile</p>
+                    <p>Projects</p>
+                    <p>Settings</p>
+
+                </nav>
+
+            </aside>
+
+
+            <!-- Right Content -->
+
+            <main class="flex-1 bg-white p-6">
+
+                <h3 class="text-2xl font-bold">
+                    Welcome Students!
+                </h3>
+
+                <p class="text-gray-600 mt-3">
+                    This is the main content section
+                    of the dashboard.
+                </p>
+
+            </main>
+
+        </div>
+
+    </section>
+
+
+    <!-- PRACTICAL 4 -->
+    <!-- Three Square Boxes -->
+
+    <section class="p-6">
+
+        <h2 class="text-2xl font-bold mb-4">
+            4. Three Square Boxes of Different Sizes
+        </h2>
+
+        <div class="flex items-end gap-4 flex-wrap">
+
+            <div class="w-20 h-20 bg-red-500"></div>
+
+            <div class="w-32 h-32 bg-blue-500"></div>
+
+            <div class="w-48 h-48 bg-green-500"></div>
+
+        </div>
+
+    </section>
+
+
+    <!-- PRACTICAL 5 -->
+    <!-- Full Screen Height Banner -->
+
+    <section class="p-6">
+
+        <h2 class="text-2xl font-bold mb-4">
+            5. Full Screen Height Banner
+        </h2>
+
+        <div class="min-h-screen w-full bg-blue-600 flex justify-center items-center">
+
+            <div class="text-center text-white p-4">
+
+                <h3 class="text-4xl font-bold">
+                    Welcome to Tailwind CSS
+                </h3>
+
+                <p class="text-lg mt-3">
+                    Learn and Build Beautiful Websites
+                </p>
+
+                <button class="bg-white text-blue-600 px-6 py-3 rounded-lg mt-5 font-bold">
+                    Get Started
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- PRACTICAL 6 -->
+    <!-- Minimum and Maximum Width -->
+
+    <section class="p-6">
+
+        <h2 class="text-2xl font-bold mb-4">
+            6. Responsive Text Box with Min and Max Width
+        </h2>
+
+        <div class="w-full min-w-0 max-w-2xl mx-auto bg-blue-100 p-6 rounded-lg">
+
+            <h3 class="text-2xl font-bold">
+                Responsive Text Box
+            </h3>
+
+            <p class="text-gray-700 mt-3 leading-relaxed break-words">
+                This is a responsive text box.
+                Its width adjusts according to the
+                available screen space. It has a
+                maximum width of 672 pixels.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- PRACTICAL 7 -->
+    <!-- Four Responsive Cards -->
+
+    <section class="p-6">
+
+        <h2 class="text-2xl font-bold mb-4">
+            7. Four Cards with Responsive Width
+        </h2>
+
+        <div class="flex flex-wrap justify-center gap-4">
+
+            <div class="w-full sm:w-64 md:w-72 bg-blue-200 p-5 rounded-lg">
+                <h3 class="text-xl font-bold">Card 1</h3>
+                <p class="mt-2">Web Design</p>
+            </div>
+
+            <div class="w-full sm:w-64 md:w-72 bg-green-200 p-5 rounded-lg">
+                <h3 class="text-xl font-bold">Card 2</h3>
+                <p class="mt-2">Development</p>
+            </div>
+
+            <div class="w-full sm:w-64 md:w-72 bg-yellow-200 p-5 rounded-lg">
+                <h3 class="text-xl font-bold">Card 3</h3>
+                <p class="mt-2">Marketing</p>
+            </div>
+
+            <div class="w-full sm:w-64 md:w-72 bg-purple-200 p-5 rounded-lg">
+                <h3 class="text-xl font-bold">Card 4</h3>
+                <p class="mt-2">Support</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- PRACTICAL 8 -->
+    <!-- Scrollable List -->
+
+    <section class="p-6">
+
+        <h2 class="text-2xl font-bold mb-4">
+            8. Scrollable Student List
+        </h2>
+
+        <div class="w-full max-w-sm h-48 overflow-y-auto bg-white border rounded-lg p-4">
+
+            <ul class="space-y-3">
+
+                <li>1. Dhruv Patel</li>
+                <li>2. Rahul Shah</li>
+                <li>3. Meet Joshi</li>
+                <li>4. Krish Mehta</li>
+                <li>5. Jay Patel</li>
+                <li>6. Harsh Shah</li>
+                <li>7. Rohan Patel</li>
+                <li>8. Aman Joshi</li>
+                <li>9. Yash Mehta</li>
+                <li>10. Raj Shah</li>
+
+            </ul>
+
+        </div>
+
+    </section>
+
+
+    <!-- PRACTICAL 9 -->
+    <!-- Profile Image -->
+
+    <section class="p-6">
+
+        <h2 class="text-2xl font-bold mb-4">
+            9. Profile Image Placeholder
+        </h2>
+
+        <div class="bg-white p-6 rounded-lg text-center max-w-sm">
+
+            <img
+                src="https://i.pravatar.cc/300"
+                alt="User Profile"
+                class="w-32 h-32 rounded-full object-cover border-4 border-blue-500 mx-auto"
+            >
+
+            <h3 class="text-2xl font-bold mt-4">
+                Dhruv Patel
+            </h3>
+
+            <p class="text-gray-500 mt-2">
+                Frontend Developer
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- PRACTICAL 10 -->
+    <!-- Responsive Video Container -->
+
+    <section class="p-6">
+
+        <h2 class="text-2xl font-bold mb-4">
+            10. Responsive Video Container (16:9)
+        </h2>
+
+        <div class="w-full max-w-3xl mx-auto aspect-video bg-black rounded-lg overflow-hidden">
+
+            <video
+                controls
+                class="w-full h-full object-contain"
+            >
+
+                <source
+                    src="https://www.w3schools.com/html/mov_bbb.mp4"
+                    type="video/mp4"
+                >
+
+                Your browser does not support video.
+
+            </video>
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+
+    <footer class="bg-gray-800 text-white text-center p-5">
+
+        <h2 class="text-xl font-bold">
+            Tailwind CSS Practical Completed
+        </h2>
+
+        <p class="mt-2">
+            Practicing Sizing Classes in Tailwind CSS
+        </p>
+
+    </footer>
+
+</body>
+</html>
